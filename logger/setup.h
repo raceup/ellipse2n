@@ -55,13 +55,13 @@ void setupTasks()
 
     // runner.addTask(tChangePage);
 
-    runner.addTask(tWriteToSD);
+    runner.addTask(tWrite2SD);
     Serial.println("added t2");
 
-    runner.addTask(tSaveToSD);
+    runner.addTask(tSave2SD);
     Serial.println("added t3");
-    tSaveToSD.enable();
-    tWriteToSD.enable();
+    tSave2SD.enable();
+    tWrite2SD.enable();
     tRefreshScreen.enable();
     // tChangePage.enable();
 }
