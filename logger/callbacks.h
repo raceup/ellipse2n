@@ -7,7 +7,7 @@
 
 void write2SDCallback()
 {
-    int[N_DATA_TO_LOG] data = {
+    int data[N_DATA_TO_LOG] = {
         micros() / 1000,  // time
         imu_time,
         imu_general_status,
@@ -28,7 +28,7 @@ void write2SDCallback()
         velocity,  // imu velocity
         gps_latitude,  // gps
         gps_longitude
-    }
+    };
 
     for (int i = 0; i < N_DATA_TO_LOG; i++) {
         logToFile(data[i]);

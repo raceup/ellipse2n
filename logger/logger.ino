@@ -3,7 +3,7 @@
 #include <TaskScheduler.h>
 
 #include "setup.h"
-#include "callBacks.h"
+#include "callbacks.h"
 #include "data.h"
 
 void setup()
@@ -11,7 +11,6 @@ void setup()
     setupSerial();
     setupCAN();
     setupTasks();
-    setupButtonInterrupts();
     setupSD();
 }
 
